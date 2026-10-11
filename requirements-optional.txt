@@ -1,0 +1,3 @@
+# Only needed for the optional Ultralytics detector backend.
+# This backend is not enabled in the final thesis configurations.
+ultralytics>=8.3.0,<9

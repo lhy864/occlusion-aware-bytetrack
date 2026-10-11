@@ -1,0 +1,13 @@
+{
+  "mot_root": "datasets/mot",
+  "output_root": "datasets/reid_mot17",
+  "sequence_suffix": "FRCNN",
+  "split_mode": "half",
+  "min_visibility": 0.2,
+  "min_box_width": 16.0,
+  "min_box_height": 32.0,
+  "min_box_area": 1024.0,
+  "bbox_padding": 0.05,
+  "frame_step": 1,
+  "min_samples_per_id": 2
+}

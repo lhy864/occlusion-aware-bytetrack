@@ -1,0 +1,655 @@
+{
+  "project": "occlusion-aware-bytetrack",
+  "version": "0.1.0",
+  "release_date": "2026-10-11",
+  "manifest_excludes_itself": true,
+  "file_count": 129,
+  "source_license_notice": "ByteTrack MIT license and original source attribution retained",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 128,
+      "sha256": "d61facfc935ceca301a49c935fee86e2caea015351f4aa1aa80acf6993b53cf2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 619,
+      "sha256": "cce457e8a89370b6bb81a065baeb63073f2341289d09e79269582917b79a2cd5"
+    },
+    {
+      "path": "assets/architecture.png",
+      "bytes": 1605714,
+      "sha256": "926d2b7ecc30d3c8c45f4b67d9ec6dff2012e8b6c779807cf1b5eefec6d5364f"
+    },
+    {
+      "path": "assets/occlusion_failure.png",
+      "bytes": 2111654,
+      "sha256": "7ec68169809f3d82b00d4f3e9d9ab1cf36d155487e1b81950f861e8483537568"
+    },
+    {
+      "path": "assets/occlusion_success.png",
+      "bytes": 2301422,
+      "sha256": "c128569075055584abedd86011dfb199e02a0bc2a49b98cbaf4eb00f1e9011d9"
+    },
+    {
+      "path": "configs/demo/mytest_yolox_x_occlusion_best.json",
+      "bytes": 735,
+      "sha256": "3f359ce481a1f0ce5e5e9fd03253eb8ef97fe6794c4640826db1f9483b869fdd"
+    },
+    {
+      "path": "configs/demo/video_cpu.json",
+      "bytes": 735,
+      "sha256": "7c0f13f35d5542573da0c18108d650c17617a7e6365fe668c11d44bab1e20f72"
+    },
+    {
+      "path": "configs/eval/mot17_half_yolox_x_osnet_x1_0_ablation_a_base.json",
+      "bytes": 857,
+      "sha256": "64d5d2274d0b6cefee36dc0d38c6a4871d9bc420efdc913454526838b847c94b"
+    },
+    {
+      "path": "configs/eval/mot17_half_yolox_x_osnet_x1_0_ablation_b_reid.json",
+      "bytes": 856,
+      "sha256": "ab59bda82e675d13863f2d065948d783d27034ff6f672f87335b425836bbf550"
+    },
+    {
+      "path": "configs/eval/mot17_half_yolox_x_osnet_x1_0_ablation_c_reid_long.json",
+      "bytes": 860,
+      "sha256": "5052ff95b975a30727686f218077ec7ae9e6fee34212f0661f55fcb6426ce565"
+    },
+    {
+      "path": "configs/eval/mot17_half_yolox_x_osnet_x1_0_ablation_d_reid_cmc.json",
+      "bytes": 859,
+      "sha256": "eef62e571c207fa54c4bc959ecfe78ff5e1176859d474e29198847fc686e1a26"
+    },
+    {
+      "path": "configs/eval/mot17_half_yolox_x_osnet_x1_0_ablation_e_final.json",
+      "bytes": 855,
+      "sha256": "f8e5bdb8ae418b453ca3b019a2def8352733cfe1b54150dfe371f90e5baaba35"
+    },
+    {
+      "path": "configs/eval/mot17_test_yolox_x_submission.json",
+      "bytes": 859,
+      "sha256": "15e11744a678bcc8d8b3ee669d1cc38a372d99f0f61c7654ebb3ed33107b6b73"
+    },
+    {
+      "path": "configs/eval/mot17_train_yolox_x_occlusion_best.json",
+      "bytes": 726,
+      "sha256": "1d1f1f33fed49683abb33ed1f8ecee83a0dcad9e9c56fd0180006dcc72da4647"
+    },
+    {
+      "path": "configs/eval/mot20_test_yolox_x_final_submission.json",
+      "bytes": 923,
+      "sha256": "0986c8201c6fb9e9fff9de6fbd4402cef8395f26058a38d28991606e704722b3"
+    },
+    {
+      "path": "configs/reid/build_mot17_reid_dataset.json",
+      "bytes": 299,
+      "sha256": "2c5cdb0722a4b851d4d5484561cb450ee3ca758efddc7d8974fbe9ccecfc2fdc"
+    },
+    {
+      "path": "configs/reid/train_osnet_x1_0_mot17_no_val.json",
+      "bytes": 646,
+      "sha256": "a9a9652ae7bfd017e8f1d489427b4e89e0f8e3005b398f4318d4171006ca5305"
+    },
+    {
+      "path": "configs/reid/train_osnet_x1_0_mot17.json",
+      "bytes": 626,
+      "sha256": "86ab57a3b0b64748e0ad26db105385fcf566c808992832a445661e6a93414ccc"
+    },
+    {
+      "path": "datasets/README.md",
+      "bytes": 350,
+      "sha256": "a3e5e04f5ad2356efd230964e28c15c919648c30b204beeddc7a4a21500059c5"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "bytes": 4688,
+      "sha256": "8dd3788dfddacf0ca61c0f236f4926ba2b865fe353d28882d37b3da1d5afd7df"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "bytes": 3345,
+      "sha256": "7079e71369d2777fb867f1656d4edea63813c8d8a9ca755e1ce114d7ba3a5ff6"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 2703,
+      "sha256": "3caf3c36fb132379581993138a6ae1dde292804ba5bc28811d6fd1ae0d9512e0"
+    },
+    {
+      "path": "docs/REID_TRAINING.md",
+      "bytes": 2104,
+      "sha256": "a6a74d5ad30f6274b9b9bafe7799dcc2e147a581183f19178aa7cbdfe05047b9"
+    },
+    {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 1589,
+      "sha256": "b91d14459d33acfa434130e78a76242e7d035e4a8e8d592c39d1af3df2308361"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2257,
+      "sha256": "73de6ceb78d0987d0f3a26a8a7915a267790b9e35274d9bc230aceab13d2473f"
+    },
+    {
+      "path": "exps/default/nano.py",
+      "bytes": 1320,
+      "sha256": "80565a14257cab12bcc64dae17f4a74acf10b41afe7b63e47c2cb5ad7a844cf0"
+    },
+    {
+      "path": "exps/default/yolov3.py",
+      "bytes": 3006,
+      "sha256": "ff695bcb42950d007f7e358850a15a991a69ac3be31cc6f587d9b7ac54801c3e"
+    },
+    {
+      "path": "exps/default/yolox_l.py",
+      "bytes": 355,
+      "sha256": "419000efe9ee9b7a6dd5f4c2374b790b1d67d727264eb1df252c6138ce7cf322"
+    },
+    {
+      "path": "exps/default/yolox_m.py",
+      "bytes": 357,
+      "sha256": "2ce0921be3652f6dfc9836148846f4763be5e661641c2e897cd8c78e8e4ebb38"
+    },
+    {
+      "path": "exps/default/yolox_s.py",
+      "bytes": 357,
+      "sha256": "f184ccc218142ef8a65edade911f45235c3330dae7f874a8593e9e6877bb9549"
+    },
+    {
+      "path": "exps/default/yolox_tiny.py",
+      "bytes": 496,
+      "sha256": "dac6ae0d1b45a68eca71a76340cba1087bfd632a66c46771116899b6b9082977"
+    },
+    {
+      "path": "exps/default/yolox_x.py",
+      "bytes": 357,
+      "sha256": "f03bfc123de79517d948a72d3c279cb71f6b719b7a2010d89cdd2260701ae45b"
+    },
+    {
+      "path": "exps/example/mot/yolox_l_mix_det.py",
+      "bytes": 4352,
+      "sha256": "eee5495068e57e29d26b193a14723f548ae3c005eb225c4d6b0efd289da8b875"
+    },
+    {
+      "path": "exps/example/mot/yolox_m_mix_det.py",
+      "bytes": 4354,
+      "sha256": "fd96a2da83e84b86dabe72cf00f34306a9df66e0b1c37fea014cfaa0cbc458e3"
+    },
+    {
+      "path": "exps/example/mot/yolox_nano_mix_det.py",
+      "bytes": 5189,
+      "sha256": "7fd714a0313c34c3bb86084ea9aff7c33fdea1fd1a70de87244b9c5d36d679e2"
+    },
+    {
+      "path": "exps/example/mot/yolox_s_mix_det.py",
+      "bytes": 4354,
+      "sha256": "f9ff22c83a33b5b99aecad154253d0d67603146bfdc023362d4de123c554cf18"
+    },
+    {
+      "path": "exps/example/mot/yolox_tiny_mix_det.py",
+      "bytes": 4387,
+      "sha256": "60f29ed17952c5e1f6b0dd5b733e9a991c7e1bbcfb3e719e73dd31701b8c29ec"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_ablation.py",
+      "bytes": 4358,
+      "sha256": "85c5907fc9aa331418787e1db9db92bbdc8097bae94292406812b502bc3fac89"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_ch.py",
+      "bytes": 4354,
+      "sha256": "bdebf8df2dfaee6e1c507cda058ddea1e5136bdfaf8c789db0996ed1be21c35f"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_mix_det.py",
+      "bytes": 4456,
+      "sha256": "0d02e8692d453038d1a4de2dcadd8480241d659e348019d52100d250e8f860e3"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_mix_mot20_ch.py",
+      "bytes": 4498,
+      "sha256": "7b679ffa5c6b7c3d7b76ba76033900753ac0b046f785a1dd7a0bd90f932ad747"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_mot17_half.py",
+      "bytes": 4356,
+      "sha256": "849de0c5de2b263b78237e956719444597df43bfca44c6c588a3c76c9650dfb0"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_mot17_only.py",
+      "bytes": 4361,
+      "sha256": "58c77da6eab3ec447b89b8f76e40453cc08bac89647a90445ad9e0c86fb74275"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_mot20_train_full.py",
+      "bytes": 1267,
+      "sha256": "f65b60ea5df917c827095c29553e458e8090add9b3721591689610edd126e392"
+    },
+    {
+      "path": "exps/example/mot/yolox_x_train_full.py",
+      "bytes": 234,
+      "sha256": "91c065bb1c4b1bd7b6d8b9550ad5b13f60a83cd1ae5fefa259ddbf4b826f12e0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "e9d83751678cbaba6dfba902ea39215c423d93425e58f8450d6001f7261696f9"
+    },
+    {
+      "path": "pretrained/README.md",
+      "bytes": 1081,
+      "sha256": "20d11f43b407c312c1c303e1ea5419c6db14bac67bfbb2a684f6a80dc2572693"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 94,
+      "sha256": "dd2e3d99fb8ee5757eabfdec32d5b1245d5094bc65b2115ab4948fcd3390a927"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9073,
+      "sha256": "baf5c748dc4e87fdb3a8d67065127f0113a232002090ea33a4b86635c54bda77"
+    },
+    {
+      "path": "requirements-optional.txt",
+      "bytes": 149,
+      "sha256": "507e2cacd7b86425aa5154fc0c3b739bde327cf4f9ef621f7c9c97467505c48f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 507,
+      "sha256": "e5464b679942e2f095aebc8c8284756e284125955d17e3ca4d118824c6aa4f2a"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 9670,
+      "sha256": "e79f33e5dec6add4fdc62dac41ddbf9078c49a2b87d3378eaa107cc13e87a254"
+    },
+    {
+      "path": "setup.cfg",
+      "bytes": 615,
+      "sha256": "7fc162aee29d8a9d8fa4357e84ebfa190e2cec4ca70ad3e6a08a26e2892198f0"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 545,
+      "sha256": "8f9bf9ddb42b4cbe337afe0eac4777ec09e99aa8c2858d4a3c74047304a4c26b"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2082,
+      "sha256": "a84ee7a2e2327422586ad0a7d90bf0a9da96e0d7c923182e8d481c355622298a"
+    },
+    {
+      "path": "tools/build_mot17_reid_dataset.py",
+      "bytes": 23632,
+      "sha256": "ee649a8dc373e40c2eb0a92fb9900b2660914b498d4b29a7bf8352fad03829b4"
+    },
+    {
+      "path": "tools/build_temporal_matcher_dataset.py",
+      "bytes": 16522,
+      "sha256": "e210fa6e6134033bde240ac238fd513e24b195f4e53ba9768ac2c7837c237aec"
+    },
+    {
+      "path": "tools/convert_cityperson_to_coco.py",
+      "bytes": 2482,
+      "sha256": "8b40ea7f79c721ca4991d8f473e1b60f31efe80a7ef78c3f319799fe8e179daf"
+    },
+    {
+      "path": "tools/convert_crowdhuman_to_coco.py",
+      "bytes": 2281,
+      "sha256": "6df2fdbc7e0f4aa9be69ac38bc659ccc69e98ea57ef1126db9aedf017502ac4f"
+    },
+    {
+      "path": "tools/convert_ethz_to_coco.py",
+      "bytes": 2468,
+      "sha256": "d26b5b8540bb72ad4c91bf8ad31e536d3a4c30fdbbcee87aa9dd689b0fbb842f"
+    },
+    {
+      "path": "tools/convert_mot17_to_coco.py",
+      "bytes": 6758,
+      "sha256": "30be372483ba10adc9d6cc1708f5e7191ffd6d7c6e86db5166a4758e8f2dd97f"
+    },
+    {
+      "path": "tools/convert_mot20_to_coco.py",
+      "bytes": 6690,
+      "sha256": "6e138e2cb7a278b471d5b50229ec7116b146ec67dd0330d8d63f2de3dd51f8b6"
+    },
+    {
+      "path": "tools/demo_track.py",
+      "bytes": 26321,
+      "sha256": "0fbf30f5e2f37b82280d3ab6950d3081313daa96d0003a8e898641337712457c"
+    },
+    {
+      "path": "tools/interpolation.py",
+      "bytes": 5589,
+      "sha256": "af74b7507822bda6e56aefe9a69251f5c94d033951eac83310c9d3254981666b"
+    },
+    {
+      "path": "tools/mix_data_ablation.py",
+      "bytes": 2477,
+      "sha256": "70ca026615d50c91236614e4aa07f47487cb4de777ced0352acfa60582ecc935"
+    },
+    {
+      "path": "tools/mix_data_test_mot17.py",
+      "bytes": 3919,
+      "sha256": "af18f8c0d13c47c37020f8fa98ba9db4097ec69ea0d7f43f95b1d65e976e1ab0"
+    },
+    {
+      "path": "tools/mix_data_test_mot20.py",
+      "bytes": 2430,
+      "sha256": "bdd37479099b165ecc9f024a239dfe65fafc0bf4599a55b8065bbc3528d8d510"
+    },
+    {
+      "path": "tools/render_mot17_sequence_video.py",
+      "bytes": 7391,
+      "sha256": "052a04b60f241997a4bfc73ebd54badcc8e3e4e0e1d1391496018015e01d075d"
+    },
+    {
+      "path": "tools/track.py",
+      "bytes": 24311,
+      "sha256": "0abcbb98afaef3f1d1141f30ce841716b08f4e71ab5b9923b90211a5b34c5d17"
+    },
+    {
+      "path": "tools/train_mot17_reid.py",
+      "bytes": 30789,
+      "sha256": "dac4b026505aebcaf29171f106c4a27a045ce21dd857105aeb3e3f2df7d3df56"
+    },
+    {
+      "path": "tools/train_temporal_matcher.py",
+      "bytes": 9466,
+      "sha256": "7795704ec30b271e5433e008511a39a33b1eccc6fe2120d636986c30147b3177"
+    },
+    {
+      "path": "tools/train.py",
+      "bytes": 3437,
+      "sha256": "ed97d7ba58307505d5db247c10dd82c29f8d22ceee0eed95e2004e451b9c82dc"
+    },
+    {
+      "path": "videos/README.md",
+      "bytes": 306,
+      "sha256": "01181b0673fcada35a1665d222cf2589bf28f9f8f229172790f0fa543f2f0c93"
+    },
+    {
+      "path": "yolox/__init__.py",
+      "bytes": 126,
+      "sha256": "360710ec55f3ab0ae052d8072e2daf42df93b20ee1b7a6eb0e466165053b6d20"
+    },
+    {
+      "path": "yolox/core/__init__.py",
+      "bytes": 152,
+      "sha256": "4b5688da5b9878a8ba6fde0b5b5cf2b5fa393400a90ae576fb80f76214791bc5"
+    },
+    {
+      "path": "yolox/core/launch.py",
+      "bytes": 7038,
+      "sha256": "44874cf70e9e42a330a00146e5fe4b4ddf4758c9d194b177ac3b8a7dd1efa628"
+    },
+    {
+      "path": "yolox/core/trainer.py",
+      "bytes": 11005,
+      "sha256": "ad65ef44f858136a81eb7fdbe117597cad27ea6b25b248f815c9113c4e98932d"
+    },
+    {
+      "path": "yolox/data/__init__.py",
+      "bytes": 330,
+      "sha256": "c27fcdbf3a95cecdc701f169ea3696478454b58bb261eb30e7696d9410d0e6e8"
+    },
+    {
+      "path": "yolox/data/data_augment.py",
+      "bytes": 9377,
+      "sha256": "bfedde959139e0172a9f6e465d0d342e3522446767447a305b9660106836d8a2"
+    },
+    {
+      "path": "yolox/data/data_prefetcher.py",
+      "bytes": 2298,
+      "sha256": "806c85513f133fdb35c4a3091725c9ed69d371325a6ad0702ed7869b60e62414"
+    },
+    {
+      "path": "yolox/data/dataloading.py",
+      "bytes": 6231,
+      "sha256": "1c4997d13c13dfab6de879e8968adbcdfacde59481d57473cd113e49399138c9"
+    },
+    {
+      "path": "yolox/data/datasets/__init__.py",
+      "bytes": 240,
+      "sha256": "6e383ae82ba4fcb9e496222a3c0c8316355967aeacae721327696b9c12d1c10a"
+    },
+    {
+      "path": "yolox/data/datasets/datasets_wrapper.py",
+      "bytes": 4250,
+      "sha256": "8e0d34d59b8d602bab14697672810eee5622c6b170dab1e47035022cf7f2e7c0"
+    },
+    {
+      "path": "yolox/data/datasets/mosaicdetection.py",
+      "bytes": 10196,
+      "sha256": "1d7523a43b3bb4f687a0c07c76a30824c1def7409f1136a917e13a91ea5e34fb"
+    },
+    {
+      "path": "yolox/data/datasets/mot.py",
+      "bytes": 4464,
+      "sha256": "de59489a4b984e989e427ca843a0db8a6d981d3e04bf447d6ca08016d5cf025f"
+    },
+    {
+      "path": "yolox/data/samplers.py",
+      "bytes": 3356,
+      "sha256": "6656fcd79636579063ff0b0f16183bf44b83402984e70ed4baacf757083e092e"
+    },
+    {
+      "path": "yolox/evaluators/__init__.py",
+      "bytes": 256,
+      "sha256": "8f8312f1eb5cbb6ac4740ff4ad98ff63f2b50e689c8683b78c4ae8827fa00db4"
+    },
+    {
+      "path": "yolox/evaluators/coco_evaluator.py",
+      "bytes": 7476,
+      "sha256": "d5008dcbe30b7b5f99032c003b87bf947b472513d1306da62698fe1b1dbf561a"
+    },
+    {
+      "path": "yolox/evaluators/evaluation.py",
+      "bytes": 6562,
+      "sha256": "3fc2531f3b766c70880fe4fff4782eb03e34653ea4d4072c62cc08094b4fa639"
+    },
+    {
+      "path": "yolox/evaluators/mot_evaluator.py",
+      "bytes": 15534,
+      "sha256": "2e17c7b88625bec1c599d08913c5a8b6edf9a619f3ba5263bd2168ceda79abf9"
+    },
+    {
+      "path": "yolox/evaluators/yolov8_mot_evaluator.py",
+      "bytes": 5604,
+      "sha256": "be78b44f411e950b406d1a77879ecd355327e43b78412084218b7a98ea857905"
+    },
+    {
+      "path": "yolox/exp/__init__.py",
+      "bytes": 191,
+      "sha256": "d2ba9da6ccf4a84a2eff9268853384c32376176a3b2a1774334cc209b1813a42"
+    },
+    {
+      "path": "yolox/exp/base_exp.py",
+      "bytes": 2004,
+      "sha256": "39cc3653054d83478134ea6d1d1f0522e6a19f7839eb985ead940694410dde44"
+    },
+    {
+      "path": "yolox/exp/build.py",
+      "bytes": 1493,
+      "sha256": "41c56794ee5d40ae7ab74cd9442ae056d1aedd4e00d071d323252bd773266869"
+    },
+    {
+      "path": "yolox/exp/yolox_base.py",
+      "bytes": 8227,
+      "sha256": "eba1688a033d5713ef4ad3f8cc7157508a894c7beccc0424bf474bfb4a8848e8"
+    },
+    {
+      "path": "yolox/layers/__init__.py",
+      "bytes": 167,
+      "sha256": "71ba38d8e33219666daf7614a58f1a770ba8287ae471d44578fdb1a67516f586"
+    },
+    {
+      "path": "yolox/models/__init__.py",
+      "bytes": 297,
+      "sha256": "279354a16b6bd3224617bb933626876255c7ab4602d6192576bb055354f51382"
+    },
+    {
+      "path": "yolox/models/darknet.py",
+      "bytes": 6028,
+      "sha256": "37fd32ae7f7de29df646f7c457837834fcc0e4e08ce83034a6397092fbae6a62"
+    },
+    {
+      "path": "yolox/models/losses.py",
+      "bytes": 2900,
+      "sha256": "e4644f138ddb8658cc26a03e5d80bb0fcd4e91bb8b0085d695958aafd47a031e"
+    },
+    {
+      "path": "yolox/models/network_blocks.py",
+      "bytes": 6102,
+      "sha256": "250982431c53a5ed49c3e465266baeabe3e21a41eac941a8e5345c2e71e14a7d"
+    },
+    {
+      "path": "yolox/models/yolo_fpn.py",
+      "bytes": 2486,
+      "sha256": "4631edcfd1be2c49998c86d506145f276fcf7602c1806f3af01a9363823b8eaf"
+    },
+    {
+      "path": "yolox/models/yolo_head.py",
+      "bytes": 24079,
+      "sha256": "52d32755107a7b4951d7377d06142d1c0f6de9c025693672e565b46efe5f52d8"
+    },
+    {
+      "path": "yolox/models/yolo_pafpn.py",
+      "bytes": 3540,
+      "sha256": "bfeb522c87fc076659c804927751b503ef0185fe1cf8f9f7153369e9177a9627"
+    },
+    {
+      "path": "yolox/models/yolox.py",
+      "bytes": 1374,
+      "sha256": "a4d70f5ef75dfbb1da5394d886dc348c68cdfbb27ab725f36c313e981ba605ee"
+    },
+    {
+      "path": "yolox/tracker/basetrack.py",
+      "bytes": 4811,
+      "sha256": "b0a9b5137ba0f2a24185bab35a2223250fa8069b82275db1c9929e8c3e127c14"
+    },
+    {
+      "path": "yolox/tracker/byte_tracker.py",
+      "bytes": 67614,
+      "sha256": "67d04f49c690164b89800757c134053a7e9031678b2a300aef74ce3591d920c7"
+    },
+    {
+      "path": "yolox/tracker/gmc.py",
+      "bytes": 4130,
+      "sha256": "1841796d3b4fa59ada228771f535e8301f9f605e780836083684820e1470f456"
+    },
+    {
+      "path": "yolox/tracker/kalman_filter.py",
+      "bytes": 14758,
+      "sha256": "9845bea1984ad521762d021b9af531c2777b0d573072329c42229ef788969b9b"
+    },
+    {
+      "path": "yolox/tracker/matching.py",
+      "bytes": 17390,
+      "sha256": "2cc8a7afe961f59be3b34aa35152251ddd73673ebda6faed1db10c08b99128e4"
+    },
+    {
+      "path": "yolox/tracker/reid_extractor.py",
+      "bytes": 10439,
+      "sha256": "29a7f1220bcace2f2c951fbe23ecec2b00593503f560abb95a0203dc493d2087"
+    },
+    {
+      "path": "yolox/tracker/temporal_matcher.py",
+      "bytes": 15405,
+      "sha256": "bf7c1e28436385173b6dbcfb8abe0dc2758b658926ae6c41d04bd0e47f871e71"
+    },
+    {
+      "path": "yolox/tracking_utils/evaluation.py",
+      "bytes": 4050,
+      "sha256": "3d285196da0253756768a08789b5f159043111d7c01fe894e4b5328135fbc973"
+    },
+    {
+      "path": "yolox/tracking_utils/io.py",
+      "bytes": 3627,
+      "sha256": "2ad720146b533697d1313e20d6573664038dd34c0259f4c7e738032e9c2b8379"
+    },
+    {
+      "path": "yolox/tracking_utils/timer.py",
+      "bytes": 958,
+      "sha256": "c233a8e3942d2734f0b56b79f385daabcc01a5707649c96943a518b951695d25"
+    },
+    {
+      "path": "yolox/utils/__init__.py",
+      "bytes": 450,
+      "sha256": "3ae55fba3fc5f5b44ea4746f01ff4f07eec6f70d1460103bdf03072d57aac3e6"
+    },
+    {
+      "path": "yolox/utils/allreduce_norm.py",
+      "bytes": 2845,
+      "sha256": "c3b739fd7ad801a8e0c0e5f3867787c767131a86572a5f1384194208305de7e9"
+    },
+    {
+      "path": "yolox/utils/boxes.py",
+      "bytes": 4468,
+      "sha256": "deebe258965d42968438089cc7226d0f4bf26b708ab7ec59a47f03eef2d40165"
+    },
+    {
+      "path": "yolox/utils/checkpoint.py",
+      "bytes": 1331,
+      "sha256": "02183f33dc4e4b81788fa9fde647fe8be927087f101e11a07956ff21b459431a"
+    },
+    {
+      "path": "yolox/utils/cli_config.py",
+      "bytes": 1394,
+      "sha256": "c75312babbc261484d13acec6677694487c05ca8b8f0cbe20e99530c92708076"
+    },
+    {
+      "path": "yolox/utils/demo_utils.py",
+      "bytes": 2806,
+      "sha256": "41fc462052a5e84c7b712dd06f24df54cceefea8a6648721e8eec98d04b206d7"
+    },
+    {
+      "path": "yolox/utils/detector.py",
+      "bytes": 13368,
+      "sha256": "9bf15af32ba6dad6cc397ed6a057ab85f6b822705af541d805f4a3cf3a9d1aac"
+    },
+    {
+      "path": "yolox/utils/dist.py",
+      "bytes": 7066,
+      "sha256": "fdb051ec7a638b26617b697409fb50d694809767c8922004ec53496464798187"
+    },
+    {
+      "path": "yolox/utils/ema.py",
+      "bytes": 2533,
+      "sha256": "278a6cf961cbee4f8cd3dc2974396cd397b4c9b97299fc1cacc42dd664f8c0b2"
+    },
+    {
+      "path": "yolox/utils/logger.py",
+      "bytes": 2751,
+      "sha256": "0ae81df92d5b1d192d4897a83ef31354fd628fe092adc202ef2caadf6fef3e7d"
+    },
+    {
+      "path": "yolox/utils/lr_scheduler.py",
+      "bytes": 6561,
+      "sha256": "476464b21b3c1d31bde9f8d7fb3ebc6034086af3a4ca1eb68faa2dd1c0a053dd"
+    },
+    {
+      "path": "yolox/utils/metric.py",
+      "bytes": 3094,
+      "sha256": "bb09cac1de9161c8e1188700e1151dc6fdce297f59147d225f3e3fc0e6802acd"
+    },
+    {
+      "path": "yolox/utils/model_utils.py",
+      "bytes": 3269,
+      "sha256": "5ab2af682cde13fe46d1456f6d0ef56e09963aff7af4359d1cb99f3a32a090d6"
+    },
+    {
+      "path": "yolox/utils/setup_env.py",
+      "bytes": 1574,
+      "sha256": "3b844eeb3d850baa72856b21d646f645a446dc9ee2e36ac5887f2e06e80bdd3c"
+    },
+    {
+      "path": "yolox/utils/visualize.py",
+      "bytes": 4958,
+      "sha256": "1856f95497be20e4eb574c24cbfa79794a66c098fb620e265c080d9ee9bb65fc"
+    }
+  ]
+}
